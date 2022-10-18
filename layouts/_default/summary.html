@@ -2,7 +2,7 @@
   {{ if .Site.Params.showAuthorOnPosts }}
     {{ partial "author.html" . }}
   {{ else }}
-    {{ if .Title }}
+    {{ if not .Title }}
       <div class="summary-date"><a href="{{ .RelPermalink }}">{{ dateFormat "Jan 2, 2006" .Date }}</a></div>
     {{ end }}
   {{ end }}

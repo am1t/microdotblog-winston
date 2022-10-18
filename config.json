@@ -23,6 +23,7 @@
   		"baseOffsetColor" : "#eaeaea",
   		"headingColor" : "#1c1b1d",
   		"textColor" : "#4e5157",
-  		"dotColor" : "#7b16ff"
+  		"dotColor" : "#7b16ff",
+		"author-title" : "Writer & Coder"
 	}
 }
