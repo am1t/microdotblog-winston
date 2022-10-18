@@ -1,0 +1,32 @@
+{
+	"version": "1.0.0",
+	"title": "Winston theme",
+	"description": "A bold minimal blogging Hugo theme, customized for Micro.blog.",
+	"fields": [
+		{
+			"field": "params.twitter",
+			"label": "Twitter",
+			"placeholder": "Your Twitter username"
+		},
+		{
+			"field": "params.github",
+			"label": "GitHub",
+			"placeholder": "Your GitHub username"
+		},
+		{
+			"field": "params.linkedin",
+			"label": "LinkedIn",
+			"placeholder": "Your LinkedIn username"
+		},
+		{
+			"field": "params.favicon",
+			"label": "Favicon Path",
+			"placeholder": "Path to the favicon to be used"
+		},
+		{
+			"field": "params.showPostsOnHomepage",
+			"label": "Display full post content on Homepage",
+			"type": "boolean"
+		}
+	]	
+}

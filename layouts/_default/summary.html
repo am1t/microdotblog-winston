@@ -2,8 +2,12 @@
   {{ if .Site.Params.showAuthorOnPosts }}
     {{ partial "author.html" . }}
   {{ else }}
-    <div class="summary-date">{{ dateFormat "Jan 2, 2006" .Date }}</div>
+    {{ if .Title }}
+      <div class="summary-date"><a href="{{ .RelPermalink }}">{{ dateFormat "Jan 2, 2006" .Date }}</a></div>
+    {{ end }}
   {{ end }}
-  <h2 class="summary-title"><a href="{{ .RelPermalink }}">{{ .Title }}</a></h2>
-  <p class="summary-description">{{ .Params.description }}</p>
+  {{ if .Title }}
+    <h2 class="summary-title"><a href="{{ .RelPermalink }}">{{ .Title }}</a></h2>
+  {{ end }}
+  <p class="summary-description">{{ .Summary | truncate 300 }}</p>
 </div>

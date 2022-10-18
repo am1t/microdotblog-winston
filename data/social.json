@@ -1,0 +1,19 @@
+{
+  "links": [
+    {
+      "name": "twitter",
+      "url": "https://twitter.com/_am1t",
+      "image": "images/social/twitter.svg"
+    },
+    {
+      "name": "github",
+      "url": "https://github.com/am1t",
+      "image": "images/social/github.svg"
+    },
+    {
+      "name": "linkedin",
+      "url": "https://www.linkedin.com/amitgawande",
+      "image": "images/social/linkedin.svg"
+    }
+  ]
+}
