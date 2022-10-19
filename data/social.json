@@ -1,19 +1,29 @@
 {
   "links": [
     {
-      "name": "twitter",
+      "name": "Twitter",
       "url": "https://twitter.com/_am1t",
       "image": "images/social/twitter.svg"
     },
     {
-      "name": "github",
+      "name": "GitHub",
       "url": "https://github.com/am1t",
       "image": "images/social/github.svg"
     },
     {
-      "name": "linkedin",
+      "name": "LinkedIn",
       "url": "https://www.linkedin.com/amitgawande",
       "image": "images/social/linkedin.svg"
-    }
+    },
+    {
+      "name": "Micro.Blog",
+      "url": "https://micro.blog/amit",
+      "image": "images/social/microdotblog.svg"
+    },
+    {
+      "name": "BuyMeACoffe",
+      "url": "https://buymeacoffee.com/amitgawande",
+      "image": "images/social/buymeacoffee.svg"
+    },
   ]
 }

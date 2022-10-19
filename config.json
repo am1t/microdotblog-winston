@@ -13,7 +13,7 @@
 		}
 	},
 	"params": {
-		"showPostsOnHomepage" : true,
+		"showPostsOnHomepage" : false,
 		"addDot" : true,
 		"showAuthorOnHomepage" : true,
 		"showAuthorOnPosts" : false,
