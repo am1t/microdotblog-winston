@@ -167,10 +167,15 @@ ul {
   }
 }
 
-.post-tags a {
-  font-size: 20px;
-  /* margin-top: 30px; */
+.post-date, a.post-tag {
+  font-size: 18px;
   margin-right: 10px;
+}
+
+.post-meta .dot {
+  font-size: 18px;
+  margin-right: 10px;
+  color: var(--dot-color);
 }
 
 .post-tags {
@@ -201,3 +206,80 @@ span.microblog_fullname {
   padding: 10px;
   font-size: 16px;
 }
+
+.post-note, .post-stats {
+	background:#fff5b8;
+	border-left: 2px solid #d4a259;
+	padding: 10px;
+  	margin-right: 5px;
+  	color: #333;
+	border-radius: 5px;
+}
+
+.post-note a { color: #d4a259;}
+
+.post-note h2 { margin-top: 5px}
+
+note {
+	background: #fff5b8;
+	color: #333;
+}
+
+.now-metadata { 
+  	font-size: 16px;
+    color: #666;
+    margin: 5px auto 0;
+    background-color: #fff5b8;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.now-hl { 
+	font-size: 14px; 
+	color: #e24e42; 
+  	margin: 5px auto 0;
+  	padding: 0 5px;	
+  	background-color: #fff5b8;
+	border-radius: 3px;
+}
+
+input, textarea {
+  border: 1px solid var(--lit);
+  padding: 0 10px;
+}
+
+button, input[type=button], input[type=submit] {
+  cursor: pointer;
+  color: inherit;
+  border: none;
+}
+
+a.conversation-on-mb {
+  margin-right: 0px;
+  float: right;
+}
+
+a.reply-by-email {
+    margin-right: 2px;
+    float: right;
+}
+
+#input_search {
+  color: inherit;
+}
+
+.bookshelf_book {
+  margin: 40px auto;
+  padding-bottom: 7px;
+}
+
+.bookshelf_title {
+  padding-left: 10px;
+}
+
+.bookshelf_author {
+  padding-left: 10px;
+  font-style: italic;
+}
+
+img, video, embed, iframe { max-width: 100%; border-radius: 5px; height: auto; }

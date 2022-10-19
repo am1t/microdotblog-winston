@@ -29,6 +29,10 @@ $breakpoints: (
 @import 'main-menu-mobile';
 @import 'pygments/github';
 
+html {
+  background-color: var(--highlight-color);
+}
+
 html, body {
   box-sizing: border-box;
 }

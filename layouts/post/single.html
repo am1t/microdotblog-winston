@@ -6,28 +6,24 @@
       {{ partial "author.html" . }}
     {{ end }}
     <div class="intro">
-      {{ if not .Title }}
-        <div class="summary-date"><a href="{{ .RelPermalink }}">{{ dateFormat "Jan 2, 2006" .Date }}</a></div>
-      {{ else }}
+      {{ if .Title }}
         <h1>{{ .Title }}{{ if .Site.Params.addDot }}<span class="dot">.</span>{{ end }}</h1>
-        <div class="summary-date">{{ dateFormat "Jan 2, 2006" .Date }}</div>
-      {{ end }}
-      {{ if .Params.image }}
-      <img src="{{ .Params.image | relURL }}" />
       {{ end }}
     </div>
     <div class="content">
       {{ .Content }}
     </div>
   </div>
-  <!-- Post Tags -->
-  {{ if .Params.categories }}
-  <div class="post-tags">
-    {{ range .Params.categories }} {{ $href := print (absURL "categories/") (urlize .) }}
-    <a href="{{ $href }}">#{{ . }}</a>
+  <!-- Post Meta -->
+  <footer class="post-meta">
+    <span class="dot">⌘</span>
+    <div class="post-date">{{ dateFormat "Jan 2, 2006" .Date }}</div>
+    {{ if .Params.categories }}
+      {{ range .Params.categories }} {{ $href := print (absURL "categories/") (urlize .) }}
+        <a class="post-tag" href="{{ $href }}">#{{ . }}</a>
+      {{ end }}
     {{ end }}
   </footer>
-  {{ end }}
   {{ if .Site.Params.include_conversation }}
     <h3>Conversations<span class="dot">.</span></h3>
 	  <script type="text/javascript" src="https://micro.blog/conversation.js?url={{ .Permalink }}"></script>
