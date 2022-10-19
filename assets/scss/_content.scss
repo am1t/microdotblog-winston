@@ -117,9 +117,11 @@ ul {
     color: var(--color-base-text);
   }
   img {
-    margin: 40px 0 40px 0;
+    display: block;
+    margin: 40px auto;
     max-width: 100%;
     height: auto;
+    box-shadow: 4px 10px 10px rgb(0 0 0 / 20%);
   }
   figure {
     margin: 2.6rem 0 1.18rem;
