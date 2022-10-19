@@ -6,7 +6,12 @@
       {{ partial "author.html" . }}
     {{ end }}
     <div class="intro">
-      <h1>{{ .Title }}{{ if .Site.Params.addDot }}<span class="dot">.</span>{{ end }}</h1>
+      {{ if not .Title }}
+        <div class="summary-date"><a href="{{ .RelPermalink }}">{{ dateFormat "Jan 2, 2006" .Date }}</a></div>
+      {{ else }}
+        <h1>{{ .Title }}{{ if .Site.Params.addDot }}<span class="dot">.</span>{{ end }}</h1>
+        <div class="summary-date">{{ dateFormat "Jan 2, 2006" .Date }}</div>
+      {{ end }}
       {{ if .Params.image }}
       <img src="{{ .Params.image | relURL }}" />
       {{ end }}
@@ -15,6 +20,14 @@
       {{ .Content }}
     </div>
   </div>
+  <!-- Post Tags -->
+  {{ if .Params.categories }}
+  <div class="post-tags">
+    {{ range .Params.categories }} {{ $href := print (absURL "categories/") (urlize .) }}
+    <a href="{{ $href }}">#{{ . }}</a>
+    {{ end }}
+  </footer>
+  {{ end }}
   {{ if .Site.Params.include_conversation }}
 	  <script type="text/javascript" src="https://micro.blog/conversation.js?url={{ .Permalink }}"></script>
   {{ end }}
