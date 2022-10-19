@@ -1,8 +1,8 @@
 ---
-title: "Blog"
+title: "Articles"
 date: 2019-02-24
 menu:
   main:
-    name: "Blog"
+    name: "Articles"
     weight: 2
 ---
