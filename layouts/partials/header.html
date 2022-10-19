@@ -2,17 +2,22 @@
   <a class="header-logo" href="{{ .Site.Home.RelPermalink }}">{{ .Site.Title }}</a>
   <div class="menu-main">
     <ul>
-      {{ $currentPage := . }}
-      {{ range .Site.Menus.main }}
-      {{ $active := or ($currentPage.IsMenuCurrent "main" .) ($currentPage.HasMenuCurrent "main" .) }}
-      {{ $active = or $active (eq (.URL | relLangURL) ($currentPage.RelPermalink | relLangURL)) }}
-      <li class="menu-item-{{ .Name | lower }} {{ if $active }}active{{ end }}">
-        <a href="{{.URL}}">
-          {{ .Pre }}
-          <span>{{ .Name }}</span>
-        </a>
+      {{ $url := .RelPermalink }}
+      <li class="menu-item-post {{ if strings.HasSuffix $url "/post/" }}active{{ end }}">
+        <a class="" href="/post/">Articles</a>
       </li>
-      {{end}}
+      <li class="menu-item-notes {{ if strings.HasSuffix $url "/notes/" }}active{{ end }}">
+        <a class="" href="/notes/">Notes</a>
+      </li>
+      <li class="menu-item-stats {{ if strings.HasSuffix $url "/stats/" }}active{{ end }}">
+        <a class="" href="/stats/">Stats</a>
+      </li>
+      <li class="menu-item-now {{ if strings.HasSuffix $url "/now/" }}active{{ end }}">
+        <a class="" href="/now/">Now</a>
+      </li>
+      <li class="menu-item-about {{ if strings.HasSuffix $url "/about/" }}active{{ end }}">
+        <a class="" href="/about/">About</a>
+      </li>
     </ul>
   </div>
   <div id="toggle-menu-main-mobile" class="hamburger-trigger">
