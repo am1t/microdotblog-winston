@@ -16,6 +16,7 @@
 <link rel="webmention" href="https://micro.blog/webmention" />
 <link rel="subscribe" href="https://micro.blog/users/follow" />
 
+<link rel="stylesheet" href="{{ "custom.css" | relURL }}?{{ .Site.Params.theme_seconds }}">
 {{ range .Site.Params.plugins_css }}
 	<link rel="stylesheet" href="{{ . }}" />
 {{ end }}

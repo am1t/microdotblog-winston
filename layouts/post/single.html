@@ -17,7 +17,7 @@
   <!-- Post Meta -->
   <footer class="post-meta">
     <span class="dot">⌘</span>
-    <div class="post-date">{{ dateFormat "Jan 2, 2006" .Date }}</div>
+    <span class="post-date">{{ dateFormat "Jan 2, 2006" .Date }}</span>
     {{ if .Params.categories }}
       {{ range .Params.categories }} {{ $href := print (absURL "categories/") (urlize .) }}
         <a class="post-tag" href="{{ $href }}">#{{ . }}</a>
