@@ -176,3 +176,28 @@ ul {
 .post-tags {
   padding-top: 20px;
 }
+
+.microblog_conversation {
+  padding-top: 40px;
+}
+
+.microblog_post {
+  padding: 20px 0;
+}
+
+.microblog_time a {
+  font-size: 16px;
+}
+
+img.microblog_avatar {
+  width: 40px;
+  height: 40px;
+  max-width: 40px !important;
+  border-radius: 5px;
+}
+
+span.microblog_fullname {
+  vertical-align: top;
+  padding: 10px;
+  font-size: 16px;
+}

@@ -29,6 +29,7 @@
   </footer>
   {{ end }}
   {{ if .Site.Params.include_conversation }}
+    <h3>Conversations<span class="dot">.</span></h3>
 	  <script type="text/javascript" src="https://micro.blog/conversation.js?url={{ .Permalink }}"></script>
   {{ end }}
 {{ end }}
