@@ -30,6 +30,7 @@
 
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet"> 
+  {{ partial "microblog_head.html" . }}
 </head>
 
 {{ $themeStyle := slice "" }}
@@ -59,6 +60,10 @@
 
   {{ partial "google-analytics.html" . }}
   {{ partial "plausible-analytics.html" . }}
+  {{ partial "custom_footer.html" . }}
 
+  {{ range .Site.Params.plugins_js }}
+    <script src="{{ . }}"></script>
+  {{ end }}
 </body>
 </html>
