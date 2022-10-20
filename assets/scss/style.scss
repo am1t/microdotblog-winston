@@ -8,6 +8,9 @@
   --heading-color: {{ .Site.Params.headingColor | default "#1c1b1d" }};
   --text-color: {{ .Site.Params.textColor | default "#4e5157" }};
   --dot-color: {{ .Site.Params.dotColor | default "#7b16ff" }};
+  --yellow: rgba(247, 206, 118, 0.8);
+  --orange: rgba(255, 148, 148, 0.8);
+  --blue: rgba(123, 22, 255, 0.5);
 }
 
 $breakpoints: (

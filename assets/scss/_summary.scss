@@ -1,11 +1,11 @@
+.note-summary, 
 .summary {
   margin-bottom: 50px;
   font-size: 18px;
-  line-height: 24px;
+  line-height: 26px;
   @include breakpoint('small') {
     margin-bottom: 80px;
     font-size: 18px;
-    line-height: 26px;
   }
   .summary-date {
     font-weight: bold;
@@ -26,4 +26,23 @@
   .summary-description {
     width: 80%;
   }
+}
+
+.note-summary{
+  border: 8px solid var(--heading-color);
+  padding: 20px;
+  max-width: 600px;
+  border-radius: 10px;
+}
+
+.note-summary:nth-of-type(n+1) {
+  box-shadow: 8px 8px 0 0 var(--yellow);
+}
+
+.note-summary:nth-of-type(2n+2) {
+  box-shadow: 8px 8px 0 0 var(--orange);
+}
+
+.note-summary:nth-of-type(3n+3) {
+  box-shadow: 8px 8px 0 0 var(--blue);
 }

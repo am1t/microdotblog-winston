@@ -1,7 +1,11 @@
 {{ define "body_classes" }}page-blog-single{{ end }}
 
 {{ define "main" }}
+  {{ if .Title }}
   <div class="blog">
+  {{ else }}
+  <div class="note-summary">
+  {{ end }}
     {{ if .Site.Params.showAuthorOnPosts }}
       {{ partial "author.html" . }}
     {{ end }}
@@ -13,17 +17,17 @@
     <div class="content">
       {{ .Content }}
     </div>
-  </div>
-  <!-- Post Meta -->
-  <footer class="post-meta">
-    <span class="dot">⌘</span>
-    <span class="post-date">{{ dateFormat "Jan 2, 2006" .Date }}</span>
-    {{ if .Params.categories }}
-      {{ range .Params.categories }} {{ $href := print (absURL "categories/") (urlize .) }}
-        <a class="post-tag" href="{{ $href }}">#{{ . }}</a>
+    <!-- Post Meta -->
+    <footer class="post-meta">
+      <span class="dot">⌘</span>
+      <span class="post-date">{{ dateFormat "Jan 2, 2006" .Date }}</span>
+      {{ if .Params.categories }}
+        {{ range .Params.categories }} {{ $href := print (absURL "categories/") (urlize .) }}
+          <a class="post-tag" href="{{ $href }}">#{{ . }}</a>
+        {{ end }}
       {{ end }}
-    {{ end }}
-  </footer>
+    </footer>    
+  </div>
   {{ if .Site.Params.include_conversation }}
     <h3>Conversations<span class="dot">.</span></h3>
 	  <script type="text/javascript" src="https://micro.blog/conversation.js?url={{ .Permalink }}"></script>

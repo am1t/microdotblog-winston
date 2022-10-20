@@ -1,4 +1,8 @@
+{{ if .Title }}
 <div class="summary">
+{{ else }}
+<div class="note-summary">
+{{ end }}
   {{ if .Site.Params.showAuthorOnPosts }}
     {{ partial "author.html" . }}
   {{ else }}
