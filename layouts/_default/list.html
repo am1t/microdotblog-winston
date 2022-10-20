@@ -9,4 +9,5 @@
   {{ range (.Paginator 10).Pages }}
     {{ .Render "summary" }}
   {{ end }}
+  {{ partial "paginator" . }}
 {{ end }}
