@@ -210,8 +210,8 @@ span.microblog_fullname {
 .post-note, .post-stats {
 	background:#fff5b8;
 	border-left: 2px solid #d4a259;
-	padding: 10px;
-  	margin-right: 5px;
+	padding: 10px !important;
+  	margin-right: 5px !important;
   	color: #333;
 	border-radius: 5px;
 }

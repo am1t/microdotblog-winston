@@ -1,5 +1,5 @@
 ---
-title: A Reader, Writer and a Coder
+title: Musings Etc.
 description: A Reader, Writer and a Coder
 ---
 
