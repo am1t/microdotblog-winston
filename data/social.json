@@ -1,19 +1,9 @@
 {
   "links": [
     {
-      "name": "Twitter",
-      "url": "https://twitter.com/_am1t",
-      "image": "images/social/twitter.svg"
-    },
-    {
       "name": "GitHub",
       "url": "https://github.com/am1t",
       "image": "images/social/github.svg"
-    },
-    {
-      "name": "LinkedIn",
-      "url": "https://www.linkedin.com/amitgawande",
-      "image": "images/social/linkedin.svg"
     },
     {
       "name": "Micro.Blog",
@@ -21,9 +11,14 @@
       "image": "images/social/microdotblog.svg"
     },
     {
-      "name": "BuyMeACoffe",
-      "url": "https://buymeacoffee.com/amitgawande",
-      "image": "images/social/buymeacoffee.svg"
+      "name": "Mastodon",
+      "url": "https://social.lol/@amit",
+      "image": "images/social/mastodon.svg"
+    },
+    {
+      "name": "RSS",
+      "url": "http://amitgawande.com/index.xml",
+      "image": "images/social/rss.svg"
     }
   ]
 }
