@@ -2,25 +2,26 @@
 
 {{ define "main" }}
   {{ if .Title }}
-  <div class="blog">
+  <div class="h-entry blog">
   {{ else }}
-  <div class="note-summary">
+  <div class="h-entry note-summary">
   {{ end }}
     {{ if .Site.Params.showAuthorOnPosts }}
       {{ partial "author.html" . }}
     {{ end }}
     <div class="intro">
       {{ if .Title }}
-        <h1>{{ .Title }}{{ if .Site.Params.addDot }}<span class="dot">.</span>{{ end }}</h1>
+        <h1 class="p-name">{{ .Title }}{{ if .Site.Params.addDot }}<span class="dot">.</span>{{ end }}</h1>
       {{ end }}
     </div>
-    <div class="content">
+    <div class="content e-content">
       {{ .Content }}
     </div>
     <!-- Post Meta -->
     <footer class="post-meta">
       <span class="dot">⌘</span>
-      <span class="post-date">{{ dateFormat "Jan 2, 2006" .Date }}</span>
+      <span class="post-date dt-published">{{ dateFormat "Jan 2, 2006" .Date }}</span>
+      <a class="u-url" href="{{ .RelPermalink }}" style="display:none;"/>
       {{ if .Params.categories }}
         {{ range .Params.categories }} {{ $href := print (absURL "categories/") (urlize .) }}
           <a class="post-tag" href="{{ $href }}">#{{ . }}</a>

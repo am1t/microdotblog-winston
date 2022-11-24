@@ -9,6 +9,7 @@
   {{ $defaultPath := printf "/favicon.png" | printf "%s%s" $.Site.Author.username | printf "https://micro.blog/%s" | printf "%s" }}
   <link rel="shortcut icon" href="{{ .Site.Params.favicon | default $defaultPath }}" type="image/x-icon" />
   <link rel="apple-touch-icon" href="{{ .Site.Params.favicon | default $defaultPath }}" type="image/x-icon" />
+  <link rel="me" href="https://social.lol/@amit" />
 
   {{ if .Site.IsServer }}
   {{ $style := resources.Get "scss/style.scss" | resources.ExecuteAsTemplate "style.scss" . | toCSS (dict "targetPath" "css/style.css" "enableSourceMap" true) }}
