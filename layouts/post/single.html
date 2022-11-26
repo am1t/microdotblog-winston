@@ -7,7 +7,7 @@
   <div class="h-entry note-summary">
   {{ end }}
     {{ if .Site.Params.showAuthorOnPosts }}
-      <a rel="author" class="p-author h-card" href="{{ .Site.Home.RelPermalink }}" style="display:none;">{{ .Site.Data.author.name }}</a>
+      {{ partial "author.html" . }}
     {{ end }}
     <div class="intro">
       {{ if .Title }}
@@ -19,14 +19,12 @@
     </div>
     <!-- Post Meta -->
     <footer class="post-meta">
-      <span class="dot">⌘</span>
-      <span class="post-date dt-published">{{ dateFormat "Jan 2, 2006" .Date }}</span>
-      <a class="u-url" href="{{ .RelPermalink }}" style="display:none;"/>
       {{ if .Params.categories }}
         {{ range .Params.categories }} {{ $href := print (absURL "categories/") (urlize .) }}
           <a class="post-tag p-category" href="{{ $href }}">#{{ . }}</a>
         {{ end }}
       {{ end }}
+      <a rel="author" class="p-author h-card" href="{{ .Site.Home.RelPermalink }}" style="display:none;">{{ .Site.Data.author.name }}</a>
     </footer>    
   </div>
   {{ if .Site.Params.include_conversation }}

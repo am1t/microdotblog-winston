@@ -2,5 +2,7 @@
   <img width="30" class="author-image" src="{{ .Site.Author.avatar | relURL }}" />
   <span class="author-name">{{ .Site.Data.author.name }}</span>
   <span class="author-divider"></span>
-  <span class="author-date">{{ dateFormat "January 2, 2006" .Date }}</span>
+  <span class="author-date  dt-published">{{ dateFormat "January 2, 2006" .Date }}</span>
+  <span class="author-divider"></span>
+  <a class="dot u-url" href="{{ .RelPermalink }}">⌘</a>
 </div>
