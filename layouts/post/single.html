@@ -9,11 +9,11 @@
     {{ if .Site.Params.showAuthorOnPosts }}
       {{ partial "author.html" . }}
     {{ end }}
+    {{ if .Title }}
     <div class="intro">
-      {{ if .Title }}
         <h1 class="p-name">{{ .Title }}{{ if .Site.Params.addDot }}<span class="dot">.</span>{{ end }}</h1>
-      {{ end }}
     </div>
+    {{ end }}
     <div class="content e-content">
       {{ .Content }}
     </div>
