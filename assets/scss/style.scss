@@ -54,7 +54,7 @@ body {
   &.frame {
     min-height: 100vh;
     border: 18px solid var(--highlight-color);
-    @include breakpoint('mini') {
+    @media screen and (max-width: 720px) { 
       border: 8px solid var(--highlight-color);
     }
   }
