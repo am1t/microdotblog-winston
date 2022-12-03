@@ -243,6 +243,10 @@ note {
 	border-radius: 3px;
 }
 
+.now-post p {
+  margin-bottom: 10px;
+}
+
 input, textarea {
   border: 1px solid var(--lit);
   padding: 0 10px;
@@ -309,12 +313,6 @@ li.rss-item::before {
   }
 }
 
-span.rss-date {
-  overflow: hidden;
-  display: inline-block;
-  white-space:nowrap;
-}
-
 .rss-box {
   background-color: aliceblue;
   padding: 10px;
@@ -335,7 +333,6 @@ span.rss-date {
   @media screen and (max-width: 720px) { 
     grid-column: 1/5;
     grid-row: 1;
-    max-width: 85%;
   }
 }
 
@@ -345,7 +342,6 @@ span.rss-date {
   @media screen and (max-width: 720px) { 
     grid-column: 1/5;
     grid-row: 2;
-    max-width: 85%;
   }
 }
 

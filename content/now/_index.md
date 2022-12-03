@@ -4,16 +4,10 @@ date: 2022-12-03
 layout: now
 ---
 
-- Working on making the `now` page dynamic. I do not want to manually update this post.
-- Curbing my excitement for digital sketch notes. Trying to convince myself that I do not have time for this.
-- A [lot of](https://www.amitgawande.com/2022/10/16/anatole-a-twocolumn.html) [dev projects](https://www.amitgawande.com/2022/10/20/since-i-moved.html). Currently, cultivating my digital garden. I am moving my notes from all the places into a single location. Both at work and off work. The small wins help.
-- Build my productivity system. As much as the p-word is hated, I need a process to manage the sheer amount of tasks vying for my attention.
-- I am writing regularly and following a routine of early mornings without fail. I log on to my system every morning and read & write. I am also writing [quick](https://www.amitgawande.com/2022/10/14/i-love-technology.html) [short](https://www.amitgawande.com/2022/10/17/having-more-choices.html) [posts](https://www.amitgawande.com/2022/10/19/being-favourite-vs.html) around an idea.
-- I am still working from home, but the days look numbered. There is growing discontent among the decision-makers.
-
 ## Thoughts Archive - 2022
 
 - ~~- Load the wiki with my book notes and a few other thoughts on articles. Some may not be directly linked but are available through search.~~  <span class="now-hl">Nov 3, 2022</span>
+- ~~I am still working from home, but the days look numbered. There is growing discontent among the decision-makers.~~ <span class="now-hl">Oct 24, 2022</span>
 - ~~The new job, though, is pretty satisfying. I don't think I have learnt in years what I did in the last 2 months.~~ <span class="now-hl">Oct 20, 2022</span>
 - ~~The year is moving too fast. I had planned so much for this year. An end-of-year reflection is going to be interesting.~~ <span class="now-hl">Oct 20, 2022</span>
 - ~~I have been reading a lot of books recently -- I am reading 3 books simultaneously. Should I do that? Absolutely not. But I am struggling [to address the content overload](https://www.amitgawande.com/2022/08/14/no-end-to.html).~~ <span class="now-hl">Oct 5, 2022</span>
