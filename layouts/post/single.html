@@ -24,6 +24,8 @@
           <a class="post-tag p-category" href="{{ $href }}">#{{ . }}</a>
         {{ end }}
       {{ end }}
+      {{ partial "conversation-link.html" . }}
+      {{ partial "reply-by-email.html" . }}
       <a rel="author" class="p-author h-card" href="{{ .Site.Home.RelPermalink }}" style="display:none;">{{ .Site.Data.author.name }}</a>
     </footer>    
   </div>
