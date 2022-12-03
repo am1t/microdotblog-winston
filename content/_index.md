@@ -8,4 +8,4 @@ There was a time when this place had to be minimal. Words and links. Nothing mor
 Read my [articles](https://www.amitgawande.com/post/) & [notes](https://www.amitgawande.com/notes/). Peek at my [wiki](https://wiki.amitg.net). Or subscribe from below options.
 
 ● Stream of daily updates - [RSS](https://www.amitgawande.com/feed.xml)    
-● Occasional essays, personal stories - [RSS](https://essays.amitgawande.com/rss/) | [Email](https://essays.amitgawande.com/#/portal/signup/free)    
+● Occasional essays, personal stories - [RSS](https://essays.amitgawande.com/rss/) | [Email](https://essays.amitgawande.com/#/portal/signup/free)

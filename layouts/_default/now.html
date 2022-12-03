@@ -1,0 +1,36 @@
+{{ define "main" }}
+
+<div class="intro">
+  <h1>{{ .Title }}{{ if .Site.Params.addDot }}<span class="dot">.</span>{{ end }}</h1>
+  {{ if .Params.image }}
+  <img src="{{ .Params.image | relURL }}" />
+  {{ end }}
+</div>
+
+<div class="content">
+
+<p>Here is my thoughts log presented as a simple bulleted list and updated frequently, hopefully once a week at the very least. I have learnt from experience that I cannot keep up if anything is more complicated.</p>
+
+<h2>What Have I Been Focused on?</h2>
+
+{{ .Content }}
+
+<div class="now-metadata">
+    <p>Last Updated on {{ dateFormat "Jan 2, 2006" .Date }} </p>
+    <p><b>Postscript:</b> This is a /now page inspired, and <a href="https://sivers.org/nowff">originally proposed</a>, by Derek Sivers. Why you ask? Well, the updates I write as posts are fleeting. This <a href="http://nownownow.com/about">place holds</a> what I am currently focused on.</p>
+</div>
+
+<div class="media-meta">
+    <div class="books-list">
+      <h2 class="books-list-head">Books Read Recently</h2>
+      <script language="JavaScript" src="https://feedroll.com/rssviewer/feed2js.php?src=https%3A%2F%2Fwww.goodreads.com%2Freview%2Flist_rss%2F21425016-amit%3Fshelf%3Dread&num=5&date=y&utf=y"  charset="UTF-8" type="text/javascript"></script>
+  </div>
+  <div class="movies-list">
+      <h2 class="movies-list-head">Movies Watched Recently</h2>
+      <script language="JavaScript" src="https://feedroll.com/rssviewer/feed2js.php?src=https%3A%2F%2Fletterboxd.com%2Fam1tg%2Frss%2F&num=5&utf=y"  charset="UTF-8" type="text/javascript"></script>
+  </div>
+</div>
+
+</div>
+
+{{ end }}
