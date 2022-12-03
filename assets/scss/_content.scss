@@ -232,7 +232,6 @@ note {
     background-color: #fff5b8;
     padding: 10px;
     border-radius: 5px;
-    box-shadow: 0 2px 3px rgb(0 0 0 / 10%);
 }
 
 .now-hl { 
@@ -286,33 +285,42 @@ a.reply-by-email {
 img, video, embed, iframe { max-width: 100%; border-radius: 5px; height: auto; }
 
 span.rss-date::before {
-  content: "On ";
+  content: "Finished On ";
   font-weight: 700;
-  color:var(--orange)
+}
+
+a.rss-item {
+  text-decoration: none;
 }
 
 li.rss-item {
   list-style: none !important;
+  margin-left: 12px !important;
 }
 
 li.rss-item::before {
-  content: "✪ ";
+  content: "✔︎ ";
+  color: var(--orange);
+  font-weight: bold;
+  display: inline-block;
+  width: 1.4em;
+  margin-left: -1.4em;
+  font-size: 16px;
 }
 
 span.rss-date {
   overflow: hidden;
-  width: 53%;
+  width: 45%;
   display: inline-block;
   white-space:nowrap;
+  font-size: 16px;
 }
 
 .rss-box {
-  /* width: 50%; */
   background-color: aliceblue;
   padding: 10px;
   border-radius: 10px;
   margin: 10px;
-  box-shadow: 0 2px 3px rgb(0 0 0 / 10%);
 }
 
 .books-list {
